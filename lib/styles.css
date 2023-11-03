@@ -1,0 +1,15 @@
+.dnd-content {
+  position: relative;
+}
+
+.dnd-draggable {
+  height: auto;
+  width: auto;
+  position: absolute;
+  transition: all 700ms ease;
+  cursor: grab;
+}
+
+.dnd-draggable:active {
+  cursor: grabbing;
+}

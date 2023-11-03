@@ -44,9 +44,10 @@ export class NullstackDnD extends Nullstack<NullstackDnDProps> {
     this.dragged_element_index = null;
     this.rearranging = false;
     this.container_element = this.ref;
-    this.draggable_elements = Array.from(
-      this.ref.querySelectorAll('& > [draggable="true"]')
-    );
+  }
+
+  hydrate() {
+    this.draggable_elements = Array.from(this.ref?.children) as HTMLElement[];
 
     this._arrangeItems(this.draggable_elements);
     this._setupEventListeners();
@@ -89,9 +90,7 @@ export class NullstackDnD extends Nullstack<NullstackDnDProps> {
   }
 
   _tryOnReorder() {
-    const elements = Array.from(
-      this.ref.querySelectorAll('& > [draggable="true"]')
-    ) as HTMLElement[];
+    const elements = Array.from(this.ref.children) as HTMLElement[];
 
     this.order = elements.map(({ dataset }) => dataset.index).map(Number);
 

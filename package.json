@@ -1,0 +1,33 @@
+{
+  "name": "nullstack-dnd",
+  "version": "0.0.1",
+  "main": "dist",
+  "module": "dist",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "author": "Luiz Felipe Moureau <luizfelipesmoureau@gmail.com>",
+  "homepage": "https://github.com/mococa/nullstack-dnd",
+  "scripts": {
+    "build": "npx tsc --build tsconfig.json",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "url": "https://github.com/mococa/nullstack-dnd.git"
+  },
+  "peerDependencies": {
+    "nullstack": "~0.18.0"
+  },
+  "dependencies": {
+    "@types/node": "^14.18.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6",
+    "nullstack": "~0.18.0"
+  },
+  "keywords": [
+    "dnd",
+    "drag and drop",
+    "nullstack",
+    "drag n drop",
+    "nullstack-dnd"
+  ]
+}

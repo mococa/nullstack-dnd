@@ -15,7 +15,7 @@
     "url": "https://github.com/mococa/nullstack-dnd.git"
   },
   "peerDependencies": {
-    "nullstack": "~0.18.0"
+    "nullstack": ">=0.16.0"
   },
   "dependencies": {
     "@types/node": "^14.18.1",

@@ -172,14 +172,14 @@ export class NullstackDnD extends Nullstack<NullstackDnDProps> {
     children,
     onReorder: _,
     options: __,
-    ...NullstackDnDProps
+    ...props
   }: Partial<NullstackDnDProps>) {
     if (!children) return null;
 
     return (
       <div
-        {...NullstackDnDProps}
-        class={["dnd-content", NullstackDnDProps.class]
+        {...props}
+        class={["dnd-content", props.class]
           .filter(Boolean)
           .join(" ")}
         ref={this.ref}

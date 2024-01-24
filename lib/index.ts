@@ -1,4 +1,4 @@
 import { NullstackDnD, NullstackDnDProps } from "./components/NullstackDnD";
-import "./styles.css";
+import "./styles.scss";
 
 export { NullstackDnD, NullstackDnDProps };

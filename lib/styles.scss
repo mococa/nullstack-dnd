@@ -8,8 +8,9 @@
   position: absolute;
   transition: all 700ms ease;
   cursor: grab;
+
+  &:active {
+    cursor: grabbing;
+  }
 }
 
-.dnd-draggable:active {
-  cursor: grabbing;
-}

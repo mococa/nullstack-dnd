@@ -1,6 +1,6 @@
 {
   "name": "nullstack-dnd",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "dist",
   "module": "dist",
   "types": "dist/index.d.ts",
@@ -8,7 +8,7 @@
   "author": "Luiz Felipe Moureau <luizfelipesmoureau@gmail.com>",
   "homepage": "https://github.com/mococa/nullstack-dnd",
   "scripts": {
-    "copy-styles": "cp ./lib/styles.css ./dist",
+    "copy-styles": "cp ./lib/styles.scss ./dist",
     "build": "npx tsc --build tsconfig.json && npm run copy-styles",
     "prepublishOnly": "npm run build"
   },

@@ -1,4 +1,5 @@
 import Nullstack, { HTMLAttributes, NullstackClientContext } from "nullstack";
+import "./styles.scss";
 
 export interface NullstackDnDProps extends HTMLAttributes<HTMLDivElement> {
   options?: {
